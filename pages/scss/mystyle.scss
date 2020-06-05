@@ -1,0 +1,113 @@
+$w:white;
+$r:red;
+$n:navy;
+$helv: Helvetica;
+%share{
+    padding: 20;
+}
+%c{
+    text-align: center;
+}
+body{
+    margin:0;
+    background-color:lightblue;
+    div>h2,p{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    color:black;
+}
+*{
+    font-family: Verdana;
+}
+@media only screen and (max-width: 800px){
+    body{
+        background-color: rgba(11, 22, 22, 0.459);
+    }
+}
+ul{
+    margin: 15;
+    @extend %share;
+    padding-top:0px;
+    list-style: square;
+    li{
+        color: $w;
+        font: {
+            family: $helv;
+            size: 20px;
+        }
+    }
+}
+table,th, td{
+    border: 1px solid black;    /* 2-line border for table */
+    border-collapse: collapse;    /* makes single line border */
+    @extend %share;                /* inserts space around table info */
+    @extend %c;           /* centers th and td */
+    background-color: peachpuff;
+}
+.row{
+    padding-bottom:20px;
+}
+#one,#three{
+    background-color:rgb(71, 98, 255);
+}
+#two{
+    background-color:rgb(1, 132, 255);
+}
+#head2{
+    font-family: Verdana; 
+    font-size:1.6em; 
+    padding:25px;
+    font-weight: bold;
+    @extend %c;
+}
+text{
+    color:$w;
+    @extend %c;
+    font-size:19.5px;
+}
+.links{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    a{
+        text-decoration: none;
+    }
+    color:black;
+    @extend %c;
+}
+/*NAV BAR*/
+.container{
+    background-color:$n;
+    max-width: unset;
+}
+.nav{
+   display: flex;
+   justify-content: flex-end;
+   padding: 25px;
+}
+.nav>div{
+    margin-right:20px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.75s;
+}
+.nav>.active{
+    border-bottom: 1px solid $r;
+}
+.nav>div a{
+    color:$w;
+    height:21px;
+    text-decoration:none;
+}
+.nav>div a:hover{
+    border-bottom: 2px solid $r;
+}
+/*other styles*/
+.pics{
+    @extend %c;
+    padding-bottom: 30px;
+}
+img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}

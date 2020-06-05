@@ -1,0 +1,90 @@
+h1, .links, .pics {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  background-color: lightblue;
+  font-family: Verdana;
+  color: black;
+}
+
+body div > h2, body p {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.container {
+  max-width: unset;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+.links {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: black;
+}
+
+.links a {
+  text-decoration: none;
+}
+
+.links > h2 {
+  margin: 9px;
+}
+
+/*NAV BAR*/
+.container {
+  background-color: navy;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 25px;
+}
+
+.nav > div {
+  margin-right: 20px;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: border-bottom 0.75s;
+  transition: border-bottom 0.75s;
+}
+
+.nav > .active {
+  border-bottom: 1px solid red;
+}
+
+.nav > div a {
+  color: white;
+  height: 21px;
+  text-decoration: none;
+}
+
+.nav > div a:hover {
+  border-bottom: 2px solid red;
+}
+
+/*OTHER styles*/
+.pics {
+  padding-bottom: 30px;
+}
+
+img {
+  width: 350px;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#id {
+  text-align: right;
+}
+/*# sourceMappingURL=p4.css.map */
