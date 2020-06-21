@@ -28,11 +28,13 @@ This file is a part of the website that would ideally inform the user about Bill
 	for style information for navigation bar, body and images. 
 
 page3.html
+
 This file is a part of the website that would ideally inform the user about Mark Zuckerberg. The same navigation bar is at the top right. There are 2 images centered 
 	on top and some text underneath it with information on Zuckerberg. Underneath this, are links to the other sites. This file uses p4.scss for style information for 
 	navigation bar, body and images. 
 
 page4.html
+	
 	This file is a part of the website that would ideally inform the user about Jeff Bezos. The same navigation bar is at the top right. There are 2 images centered on top
 	and some text underneath it with information on Bezos. Underneath this, are links to the other sites. This file uses p4.scss for style information for navigation bar,
 	body and images. 
